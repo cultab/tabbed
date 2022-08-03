@@ -1,2 +1,3 @@
 tabbed
-tabbed.o
+xembed
+*.o
