@@ -1317,12 +1317,12 @@ xrdb_load(void)
 
 	if (xrm != NULL) {
 		xrdb = XrmGetStringDatabase(xrm);
-		XRESOURCE_LOAD_STRING("color0", normbgcolor);
-		XRESOURCE_LOAD_STRING("color12", normfgcolor);
-		XRESOURCE_LOAD_STRING("color12", selbgcolor);
-		XRESOURCE_LOAD_STRING("color0", selfgcolor);
-		XRESOURCE_LOAD_STRING("color0", urgbgcolor);
-		XRESOURCE_LOAD_STRING("color1", urgfgcolor);
+		XRESOURCE_LOAD_STRING("normbgcolor", normbgcolor);
+		XRESOURCE_LOAD_STRING("normfgcolor", normfgcolor);
+		XRESOURCE_LOAD_STRING("selbgcolor", selbgcolor);
+		XRESOURCE_LOAD_STRING("selfgcolor", selfgcolor);
+		XRESOURCE_LOAD_STRING("normbgcolor", urgbgcolor);
+		XRESOURCE_LOAD_STRING("active", urgfgcolor);
 		XRESOURCE_LOAD_STRING("font", font);
 	}
 	XFlush(dpy);
